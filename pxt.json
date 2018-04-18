@@ -1,0 +1,18 @@
+{
+    "name": "pxt-muselab-plugin",
+    "version": "0.1.0",
+    "description": "Plugin for MuseIoT using muselab products in PXT",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "ns.ts",
+        "robotic.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}
