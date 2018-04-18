@@ -1,5 +1,5 @@
 namespace MuseRobotic {
-
+	let ph_value = ""
 	//% blockId="readPH" block="Read PH value"
 	//% weight=41
 	//% blockGap=7
@@ -21,7 +21,7 @@ namespace MuseRobotic {
 				} else {
 						serial.writeLine("PH: " + ph_value.substr(0, 2) + "." + ph_value.substr(2,  ph_value.length))
 						return ph_value.substr(0, 2) + "." + ph_value.substr(2,  ph_value.length)
-				}				
+				}
     }
 
 }
