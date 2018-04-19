@@ -1,4 +1,4 @@
-namespace MuseRobotic {
+namespace smartPH {
 	let ph_value = ""
 	//% blockId="readPH" block="Read PH value"
 	//% weight=41

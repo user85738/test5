@@ -1,5 +1,5 @@
 {
-    "name": "pxt-muselab-plugin",
+    "name": "smart_ph",
     "version": "0.1.0",
     "description": "Plugin for",
     "license": "MIT",
@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "ns.ts",
-        "robotic.ts"
+        "code.ts"
     ],
     "testFiles": [
         "tests.ts"
