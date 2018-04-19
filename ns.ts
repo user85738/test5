@@ -1,6 +1,6 @@
 /**
  * MuseRobotic blocks
  */
-//% weight=100 color=#F59E20
+//% weight=100 color=#000000
 namespace MuseRobotic {
 }
