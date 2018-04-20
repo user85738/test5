@@ -1,6 +1,7 @@
 namespace smartPH {
 	let ph_value = ""
-	//% blockId="readPH" block="Read PH value (string with decimal)"
+	//% blockId="readPH"
+	//% block="Read PH value (string with decimal)"
 	//% weight=41
 	//% blockGap=7
     export function readPH(): string {
@@ -24,7 +25,8 @@ namespace smartPH {
 				}
     }
 
-		//% blockId="readPH" block="Read PH value (number)"
+		//% blockId="readPHNumber"
+		//% block="Read PH value (number)"
 		//% weight=40
 		//% blockGap=7
 		export function readPhNumber(): number {
