@@ -2,7 +2,7 @@ namespace smartPH {
 
 		let ph_value = ""
 		//% blockId="readPH"
-		//% block="Read PH value (string with decimal) offset %offset"
+		//% block="Read PH value (string with decimal)"
 		//% weight=41
 		//% blockGap=7
     export function readPH(): string {
