@@ -1,9 +1,10 @@
 namespace smartPH {
-	let ph_value = ""
-	//% blockId="readPH"
-	//% block="Read PH value (string with decimal)"
-	//% weight=41
-	//% blockGap=7
+
+		let ph_value = ""
+		//% blockId="readPH"
+		//% block="Read PH value (string with decimal)"
+		//% weight=41
+		//% blockGap=7
     export function readPH(): string {
 			let sensorarray: number[] = []
 			for (let i = 0; i < 10; i++) {
@@ -24,7 +25,7 @@ namespace smartPH {
 						return ph_value.substr(0, 2) + "." + ph_value.substr(2,  ph_value.length)
 				}
     }
-
+		let ph_value_number = 0
 		//% blockId="readPHNumber"
 		//% block="Read PH value (number)"
 		//% weight=40
@@ -39,8 +40,8 @@ namespace smartPH {
 			for (let value of sensorarray) {
 						serial.writeLine(value.toString())
 				}
-				ph_value = sensorarray[5] * 5 * 10 * 35/ 1024
-				return ph_value;
+				ph_value_number = sensorarray[5] * 5 * 10 * 35/ 1024
+				return ph_value_number;
 		}
 
 }
