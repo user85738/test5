@@ -30,7 +30,7 @@ namespace smartPH {
 		//% block="Read PH value (x100) x %x"
 		//% weight=40
 		//% blockGap=7
-		export function readPhNumber(): number {
+		export function readPhNumber(x: number): number {
 			let sensorarray: number[] = []
 			for (let i = 0; i < 10; i++) {
 						sensorarray.push(pins.analogReadPin(AnalogPin.P0))
