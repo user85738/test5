@@ -27,7 +27,7 @@ namespace smartPH {
     }
 		let ph_value_number = 0
 		//% blockId="readPHNumber"
-		//% block="Read PH value (x100)"
+		//% block="Read PH value (x100) offset %offset|"
 		//% weight=40
 		//% blockGap=7
 		export function readPhNumber(): number {
