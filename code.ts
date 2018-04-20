@@ -30,7 +30,7 @@ namespace smartPH {
 		//% block="Read PH value (x100) x %x"
 		//% weight=40
 		//% blockGap=7
-		export function readPhNumber(x: number): void {
+		export function readPhNumber(x: number = 0): number {
 			let sensorarray: number[] = []
 			for (let i = 0; i < 10; i++) {
 						sensorarray.push(pins.analogReadPin(AnalogPin.P0))
@@ -41,7 +41,7 @@ namespace smartPH {
 						serial.writeLine(value.toString())
 				}
 				ph_value_number = (sensorarray[5] * 5 * 10 * 35/ 1024)
-				//return ph_value_number
+				return ph_value_number
 		}
 
 }
