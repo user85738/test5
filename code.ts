@@ -1,22 +1,16 @@
 namespace smartPH {
 
-		export enum ports {
-				//% blockId=port0
+		export enum Ports {
 				//% block="P0"
 				P0,
-				//% blockId=port1
 				//% block="P1"
 				P1,
-				//% blockId=port2
 				//% block="P2"
 				P2,
-				//% blockId=port3
 				//% block="P3"
 				P3,
-				//% blockId=port4
 				//% block="P4"
 				P4,
-				//% blockId=port10
 				//% block="P10"
 				P10
 		}
@@ -49,22 +43,22 @@ namespace smartPH {
 		//% blockId="readPHNumber"
 		//% block="Read PH value (x100) pin %ports| offset %offset"
 		//% weight=40
-		export function readPhNumber(ports: ports, offset: number): number {
+		export function readPhNumber(ports: Ports, offset: number): number {
 
 			let temp = 0;
 			switch (ports) {
-					case ports.P0:
-							temp = AnalogPin.P0
-					case ports.P1:
-							temp = AnalogPin.P1
-					case ports.P2:
-							temp = AnalogPin.P2
-					case ports.P3:
-							temp = AnalogPin.P3
-					case ports.P4:
-							temp = AnalogPin.P4
-					case ports.P10:
-							temp = AnalogPin.P10
+					case Ports.P0:
+							temp = AnalogPin.P0;
+					case Ports.P1:
+							temp = AnalogPin.P1;
+					case Ports.P2:
+							temp = AnalogPin.P2;
+					case Ports.P3:
+							temp = AnalogPin.P3;
+					case Ports.P4:
+							temp = AnalogPin.P4;
+					case Ports.P10:
+							temp = AnalogPin.P10;
 			}
 
 			let sensorarray: number[] = []
