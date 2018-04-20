@@ -40,8 +40,8 @@ namespace smartPH {
 			for (let value of sensorarray) {
 						serial.writeLine(value.toString())
 				}
-				ph_value_number = (sensorarray[5] * 5 * 10 * 35/ 1024) + + offset
-				return ph_value_number;
+				ph_value_number = (sensorarray[5] * 5 * 10 * 35/ 1024) + offset
+				return ph_value_number
 		}
 
 }
