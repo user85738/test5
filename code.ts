@@ -56,15 +56,15 @@ namespace smartPH {
 					case ports.P0:
 							temp = AnalogPin.P0
 					case ports.P1:
-							AnalogPin.P1
+							temp = AnalogPin.P1
 					case ports.P2:
-							AnalogPin.P2
+							temp = AnalogPin.P2
 					case ports.P3:
 							temp = AnalogPin.P3
 					case ports.P4:
-							AnalogPin.P4
+							temp = AnalogPin.P4
 					case ports.P10:
-							AnalogPin.P10
+							temp = AnalogPin.P10
 			}
 
 			let sensorarray: number[] = []
