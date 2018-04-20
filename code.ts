@@ -1,5 +1,14 @@
 namespace smartPH {
 
+		export enum ports {
+				//% blockId=port0
+				//% block="P0"
+				P0,
+				//% blockId=port1
+				//% block="P1"
+				P1
+		}
+
 		let ph_value = ""
 		//% blockId="readPH"
 		//% block="Read PH value (string with decimal)"
@@ -26,9 +35,9 @@ namespace smartPH {
     }
 		let ph_value_number = 0
 		//% blockId="readPHNumber"
-		//% block="Read PH value (x100) offset %offset"
+		//% block="Read PH value (x100) pin %ports| offset %offset"
 		//% weight=40
-		export function readPhNumber(offset: number): number {
+		export function readPhNumber(ports: ports, offset: number): number {
 			let sensorarray: number[] = []
 			for (let i = 0; i < 10; i++) {
 						sensorarray.push(pins.analogReadPin(AnalogPin.P0))
