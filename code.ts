@@ -60,7 +60,7 @@ namespace smartPH {
 					case Ports.P10:
 							temp = AnalogPin.P10;
 			}
-
+			serial.writeLine("temp: " + temp.toString())
 			let sensorarray: number[] = []
 			for (let i = 0; i < 10; i++) {
 						sensorarray.push(pins.analogReadPin(temp))
