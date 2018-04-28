@@ -65,8 +65,7 @@ namespace smartPH {
 					case Ports.P10:
 							temp = AnalogPin.P10;
 							break;
-			}
-			basic.showNumber(temp);
+			}			
 			let sensorarray: number[] = []
 			for (let i = 0; i < 10; i++) {
 						sensorarray.push(pins.analogReadPin(temp))
